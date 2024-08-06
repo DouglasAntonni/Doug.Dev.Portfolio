@@ -3,6 +3,7 @@ body {
     font-family: 'Poppins', Arial, sans-serif;
     color: #ffffff;
     background-image: url("img/wall7.jpg");
+    background-color: #000000;
     background-size: cover;
 } 
 .avatar-container {
