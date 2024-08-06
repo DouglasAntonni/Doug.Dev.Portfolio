@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Poppins', Arial, sans-serif;
     color: #ffffff;
-    background-image: url("/img/wall7.jpg");
+    background-image: url("img/wall7.jpg");
     background-size: cover;
 } 
 .avatar-container {
