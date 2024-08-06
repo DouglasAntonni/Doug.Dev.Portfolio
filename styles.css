@@ -1,0 +1,439 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #ffffff;
+    background-color: #121212;
+    background-image: url("/img/wall7.jpg");
+    background-size: cover;
+} 
+.avatar-container {
+    position: relative;
+    max-width: 100px; /* Ajuste o tamanho conforme necessário */
+    width: 100%;
+    height: auto;
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    overflow: hidden;
+}
+
+.avatar {
+    
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s, box-shadow 0.3s; /* Transição suave para efeito de hover */
+    -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%);
+    mask-image: radial-gradient(circle, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%);
+}
+
+.avatar:hover {
+    transform: scale(1.05); /* Levemente aumenta a imagem ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada ao passar o mouse */
+    cursor: pointer;
+}
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #1a1a1ab2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    position: fixed;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo-text {
+    font-size: 50px;
+    color: #ff6347; /* Vibrant orange */
+}
+
+.name, .profession {
+    display: block;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #1e90ff; /* Vibrant blue */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 20px 0;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #32cd32; /* Vibrant green */
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background: #ff6347; /* Vibrant orange */
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+nav ul li a:hover::before, nav ul li a.active::before {
+    transform: scaleX(1);
+}
+
+.social-links {
+    display: flex;
+    padding-bottom: 100px;
+    justify-content: space-around;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 10px 5px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #32cd32; /* Vibrant green */
+    transform: scale(1.30);
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.main-content {
+    margin-left: 270px;
+    padding: 40px;
+    flex: 1;
+}
+
+.intro {
+    text-align: left;
+}
+
+.intro h1 {
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.highlight {
+    color: #ff6347; /* Vibrant orange */
+}
+
+.subheading {
+    font-size: 18px;
+    margin: 20px 0;
+    color: #1e90ff; /* Vibrant blue */
+}
+
+
+.skill {
+    background-color: #1a1a1a;
+    padding: 20px;
+    margin: 20px 0;
+    
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.skill h2 {
+    font-size: 20px;
+    color: #1e90ff; /* Vibrant blue */
+}
+
+.skill .detalhes {
+    display: none;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.skill:hover {
+    background-color:transparent;
+    border-radius: 10%;
+    transform: scale(1.05);
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff6347; /* Vibrant orange */
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #ff4500; /* Darker orange */
+    transform: scale(1.15);
+}
+.about-me h1, .about-me h2 {
+    margin-bottom: 10px;
+    color: #ff6347; /* Vibrant orange */
+}
+
+.about-me h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.about-me h2 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+
+/* Parágrafos */
+.about-me p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #b0b0b0; /* Light gray for readability */
+}
+
+/* Lista de habilidades */
+.about-me ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.about-me ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #b0b0b0; /* Light gray for readability */
+    padding-left: 20px;
+    position: relative;
+}
+
+.about-me ul li::before {
+    content: "•";
+    color: #ff6347; /* Vibrant orange */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Destaque para habilidades */
+.about-me ul li strong {
+    color: #1e90ff; /* Vibrant blue */
+}
+.main-content {
+    margin-left: 270px;
+    padding: 40px;
+    flex: 1;
+}
+
+.introl {
+    text-align: left;
+}
+
+.introl h1 {
+    font-size: 50px;
+    line-height: 1.2;
+    color: #ff6347; /* Vibrant orange */
+}
+
+.introl p {
+    font-size: 18px;
+    color: #b0b0b0; /* Light gray */
+}
+
+
+.skills-section, .tools-section {
+    margin-top: 40px;
+}
+
+.skills-section h2, .tools-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #ff6347; /* Vibrant orange */
+}
+
+.skills-section ul, .tools-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills-section ul li, .tools-section ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #b0b0b0; /* Light gray for readability */
+    padding-left: 20px;
+    position: relative;
+}
+
+.skills-section ul li::before, .tools-section ul li::before {
+    content: "•";
+    color: #ff6347; /* Vibrant orange */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.skills-section ul li strong, .tools-section ul li strong {
+    color: #1e90ff; /* Vibrant blue */
+}
+/* styles.css */
+
+/* Button Style */
+.contact-button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #cc5037;
+    transform: scale(1.05);
+}
+
+/* Modal Style */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+    color: #1E90E9;
+}
+
+.modal-content {
+    background-color: #000000;
+    margin: 5% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(185, 183, 183, 0.3);
+}
+
+.close-button {
+    transition: background-color 0.3s, transform 0.3s;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #1e90e9;
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(1.30);
+}
+
+/* Form Style */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background-color: #1c7ed6;
+    transform: scale(1.05);
+}
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+    }
+    .avatar {
+        max-width: 120px; /* Slightly smaller size for mobile devices */}
+
+    .main-content {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .cartoon {
+        max-width: 200px; /* Slightly smaller size for tablets */
+    }
+    .intro h1 {
+        font-size: 30px;
+    }
+
+    .intro p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-text {
+        font-size: 30px;
+    }
+    .avatar {
+        max-width: 90px; /* Even smaller size for very small screens */
+    }
+    .cartoon {
+        max-width: 150px; /* Even smaller size for mobile devices */
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .social-links {
+        flex-direction: column;
+    }
+}

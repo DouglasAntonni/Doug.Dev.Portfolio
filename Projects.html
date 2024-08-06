@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Douglas - Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/programming-icon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <span class="logo-text">DV</span>
+                <span class="name">Douglas Veríssimo</span>
+                <span class="profession">Web Developer</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="about.html">Sobre mim</a></li>
+                    <li><a href="skills.html">Minhas Habilidades</a></li>
+                    <li><a href="Projects.html">Projetos</a></li>
+                    <li><a href="contact.html">Contatos</a></li>
+                    <li><a href="inspirations.html">Inspirações</a></li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </aside>
+        <main class="main-content">
+            <section class="skill" onclick="toggleDetails('projeto1')">
+                <h2>Odiosa Official Website</h2>
+                <div id="projeto1" class="detalhes">
+                    <p>Descrição do Projeto:
+                        Desenvolvi o site oficial para a banda de rock "[Nome da Banda]", com o objetivo de proporcionar
+                        uma experiência imersiva e interativa para os fãs. O design do site reflete a energia e a
+                        identidade visual da banda, incorporando elementos visuais impactantes e uma navegação
+                        intuitiva.
+
+                        Principais Funcionalidades:
+                    <ul>
+                        <li>Homepage: Uma introdução vibrante com um slideshow de imagens de alta qualidade e vídeos de
+                            performances ao vivo. Inclui uma seção de notícias destacadas para manter os fãs atualizados
+                            com os eventos recentes da banda.</li>
+                        <li>Biografia: Uma página dedicada à história da banda, apresentando uma cronologia interativa
+                            de sua trajetória, informações sobre cada membro e curiosidades.</li>
+                        <li>Discografia: Uma seção detalhada com todos os álbuns e singles lançados pela banda. Cada
+                            álbum possui uma página própria com informações, letras das músicas e links para streaming e
+                            download.</li>
+                        <li>Tour: Um calendário de shows interativo, permitindo aos fãs visualizar datas de turnê,
+                            locais e comprar ingressos diretamente através de parceiros de venda.</li>
+                        <li>Galeria: Uma coleção de fotos e vídeos dos shows, ensaios e bastidores, com opção de
+                            visualização em tela cheia e compartilhamento em redes sociais.</li>
+                        <li>Loja: Uma loja online integrada, onde os fãs podem comprar produtos oficiais, como
+                            camisetas, pôsteres, vinis e outros itens exclusivos.</li>
+                        <li>Contato: Um formulário de contato para fãs e promotores, além de links para as redes sociais
+                            da banda.</li>
+                    </ul>
+
+                    Tecnologias Utilizadas:
+                    <ul>
+                        <li>Frontend: HTML5, CSS3, JavaScript, React</li>
+                        <li>Backend: Node.js, Express.js</li>
+                        <li>Banco de Dados: MongoDB</li>
+                        <li>Integrações: API de pagamento, serviços de streaming de música, Google Maps para localização
+                            de eventos</li>
+                        <li>Design Responsivo: Adaptável a diferentes dispositivos, garantindo uma experiência otimizada
+                            em desktops, tablets e smartphones.</li>
+                    </ul>
+                    Resultado:
+                    <p>O site tem sido um sucesso entre os fãs, proporcionando uma plataforma centralizada para todas as
+                        informações e interações relacionadas à banda. A navegação fluida e o design cativante ajudam a
+                        fortalecer a conexão entre a banda e seu público, aumentando o engajamento e as vendas de
+                        produtos e ingressos.</p>
+                    <a href="https://github.com/seuusuario/projeto1" target="_blank" class="btn">Ver no GitHub</a>
+                    </p>
+                    </p>
+                </div>
+            </section>
+            <section class="skill" onclick="toggleDetails('projeto2')">
+                <h2>Calculador de Tempo de Vida Restante</h2>
+                <div id="projeto2" class="detalhes">
+                    <p>Descrição do Projeto:</p>
+                    <p>Desenvolvi a **Calculadora Futurística de Tempo de Vida**, uma aplicação web interativa que
+                        estima a quantidade de anos restantes de vida com base em variáveis relacionadas à saúde e ao
+                        estilo de vida. O objetivo é fornecer uma ferramenta que permita aos usuários refletir sobre
+                        seus hábitos e suas implicações na expectativa de vida, com uma interface visualmente atraente e
+                        responsiva.</p>
+                    <p>Principais Funcionalidades:</p>
+                    <ul>
+                        <li>Entrada de Dados: Os usuários podem inserir informações pessoais e de estilo de vida,
+                            incluindo idade, horas de sono diárias, qualidade da alimentação, uso de álcool e drogas.
+                        </li>
+                        <li>Cálculo de Expectativa de Vida: A aplicação calcula a expectativa de vida restante com base
+                            nas informações fornecidas, ajustando para hábitos de sono, alimentação, consumo de álcool e
+                            drogas, e considerando a idade do usuário.</li>
+                        <li>Interface do Usuário: O design inclui um fundo escuro com texto em branco para melhor
+                            contraste, e os resultados são exibidos em um lightbox centralizado. A interface é
+                            responsiva e adaptável a diferentes tamanhos de tela.</li>
+                        <li>Design Responsivo: A imagem de fundo se mantém centralizada e adaptada ao tamanho da tela,
+                            com um efeito de desfoque para suavizar a aparência. A calculadora é centralizada e
+                            redimensionada conforme necessário para garantir uma boa apresentação em dispositivos móveis
+                            e desktops.</li>
+                        <li>Acessibilidade: Inclui sombras brancas no texto dos campos de entrada para melhorar a
+                            legibilidade sobre o fundo escuro.</li>
+                    </ul>
+                    <p>Tecnologias Utilizadas:</p>
+                    <ul>
+                        <li>Frontend: HTML5, CSS3, JavaScript</li>
+                        <li>Design Responsivo: Utilização de media queries e ajuste de layout para diferentes
+                            dispositivos e tamanhos de tela.</li>
+                        <li>Estilização: Efeitos de sombra e desfoque para melhorar a visibilidade e a estética visual
+                            da aplicação.</li>
+                    </ul>
+                    <p>Resultado:</p>
+                    <p>A aplicação oferece uma ferramenta útil e visualmente impactante para os usuários refletirem
+                        sobre seus hábitos e sua expectativa de vida. A interface interativa e o design responsivo
+                        garantem uma experiência de usuário fluida e envolvente, independentemente do dispositivo
+                        utilizado. A calculadora tem sido bem recebida por proporcionar uma análise clara e imediata dos
+                        impactos dos hábitos de vida na expectativa de vida.</p>
+                    <a href="https://github.com/seuusuario/projeto1" target="_blank" class="btn">Ver no GitHub</a>
+
+                </div>
+               
+        </section>
+        <section class="skill" onclick="toggleDetails('projeto3')">
+            <h2>To-Do List Colaborativo</h2>
+            <div id="projeto3" class="detalhes">
+                <p>Descrição do Projeto:</p>
+                <p>Desenvolvi um sistema de **To-Do List com Edição Colaborativa**, permitindo que múltiplos usuários
+                    interajam e gerenciem tarefas simultaneamente. O sistema oferece uma experiência colaborativa onde os
+                    usuários podem adicionar, editar e remover tarefas, com atualizações em tempo real para todos os
+                    participantes. O design é intuitivo e adaptável a diferentes dispositivos, garantindo uma boa experiência
+                    de uso.</p>
+                <p>Principais Funcionalidades:</p>
+                <ul>
+                    <li>Cadastro e Gerenciamento de Usuários: Os usuários podem criar uma conta e acessar o sistema para
+                        gerenciar suas tarefas e colaborar com outros.</li>
+                    <li>Criação e Edição de Tarefas: Adição, edição e exclusão de tarefas, com opções para marcar como
+                        realizada ou não realizada.</li>
+                    <li>Visualização e Atualizações em Tempo Real: Modificações nas tarefas são refletidas em tempo real
+                        para todos os usuários conectados.</li>
+                    <li>Interface Intuitiva: Design responsivo e fácil de usar, com um menu interativo para selecionar e
+                        visualizar tarefas.</li>
+                </ul>
+                <p>Tecnologias Utilizadas:</p>
+                <ul>
+                    <li>Frontend: HTML5, CSS3, JavaScript</li>
+                    <li>Backend: Node.js, Express.js</li>
+                    <li>WebSocket: Para comunicação em tempo real e sincronização de dados entre os usuários.</li>
+                    <li>Banco de Dados: MongoDB (opcional, para persistência de dados entre sessões)</li>
+                    <li>Design Responsivo: Adaptável a diferentes dispositivos, garantindo uma experiência otimizada em
+                        desktops, tablets e smartphones.</li>
+                </ul>
+                <p>Resultado:</p>
+                <p>O sistema de To-Do List com edição colaborativa tem sido eficaz em ambientes de trabalho e equipes,
+                    proporcionando uma maneira prática e eficiente de gerenciar tarefas em grupo. A atualização em tempo
+                    real e a interface intuitiva melhoraram a produtividade e a colaboração entre os usuários.</p>
+                <a href="https://github.com/seuusuario/projetoColaborativo" target="_blank" class="btn">Ver no GitHub</a>
+            </div>
+        </section>
+        </main>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Douglas - Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/programming-icon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <span class="logo-text">
+                    <img class="avatar" src="/img/avatar (1).png" alt="Douglas Antonni">
+                </span>
+                                <span class="name">Douglas Veríssimo</span>
+                <span class="profession">Frontend Developer</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="about.html">Sobre mim</a></li>
+                    <li><a href="skills.html">Minhas Habilidades</a></li>
+                    <li><a href="Projects.html">Projetos</a></li>
+                    <li><a href="contact.html">Contatos</a></li>
+                    <li><a href="inspirations.html">Inspirações</a></li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="https://github.com/DouglasAntonni"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </aside>
+        <main class="main-content">
+            <section class="intro">
+                <h1>Olá, <br> eu sou <span class="highlight">Douglas Veríssimo</span>, <br> web developer</h1>
+                <p class="subheading">Front End Developer</p>
+                <button class="contact-button">Contact me!</button>
+            </section>
+        </main>
+    </div>
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Contact Me</h2>
+            <form id="contactForm" enctype="multipart/form-data">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      (function(){
+         emailjs.init("1moWNrDbfN-K4Gjjj"); // Substitua "D5hy3g5xjvmelNRDSpeVa" pelo seu ID de usuário do EmailJS
+      })();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
