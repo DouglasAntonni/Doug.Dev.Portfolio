@@ -407,9 +407,7 @@ form button:hover {
         margin-left: 0;
         margin-top: 20px;
     }
-    .cartoon {
-        max-width: 200px; /* Slightly smaller size for tablets */
-    }
+  
     .intro h1 {
         font-size: 30px;
     }
@@ -426,9 +424,7 @@ form button:hover {
     .avatar {
         max-width: 90px; /* Even smaller size for very small screens */
     }
-    .cartoon {
-        max-width: 150px; /* Even smaller size for mobile devices */
-    }
+ 
     nav ul li {
         margin: 10px 0;
     }
