@@ -19,10 +19,14 @@ function toggleDetails(id) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Inicializa o EmailJS com o seu User ID
+    emailjs.init("1moWNrDbfN-K4Gjjj"); // Substitua pelo seu User ID do EmailJS
+
+    // Modal handling
     const modal = document.getElementById('contactModal');
     const btn = document.querySelector('.contact-button');
     const span = document.querySelector('.close-button');
-    const form = document.getElementById('contactForm');
+    const modalForm = document.getElementById('contactForm');
 
     btn.onclick = function() {
         modal.style.display = 'block';
@@ -38,20 +42,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    form.onsubmit = function(event) {
+    modalForm.onsubmit = function(event) {
         event.preventDefault();
 
-        const formData = new FormData(form);
-       
-        formData.append('name', document.getElementById('name').value);
-
-        emailjs.sendForm('service_t1x83ii', 'template_4znf1nl', '#contactForm')
+        emailjs.sendForm('service_t1x83ii', 'template_4znf1nl', modalForm)
             .then(function(response) {
-                alert('Message sent successfully!');
+                alert('Mensagem enviada com sucesso!');
                 modal.style.display = 'none';
-                form.reset();
+                modalForm.reset();
             }, function(error) {
-                alert('Failed to send message. Please try again.');
+                alert('Falha ao enviar mensagem. Por favor, tente novamente.');
             });
     }
+
 });
